@@ -10,6 +10,13 @@
  */
 
 // Your code:
+const abs = function(number){
+    if(Math.sign(number) === -1) {
+      return number * -1;
+    } else {
+      return number * 1;
+    }
+  }
 
 //* Begin of tests
 const assert = require('assert');
