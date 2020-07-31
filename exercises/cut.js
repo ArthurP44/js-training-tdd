@@ -12,6 +12,20 @@
 
 // Your code:
 
+const cutFirst = function(string){
+    return string.substring(2);
+}
+
+const cutLast = function(string){
+    return string.substring(0, string.length - 2);
+}
+
+const cutFirstLast = function(string){
+    let result = string.substring(2);
+    result = result.substring(0, result.length - 2);
+    return result;
+}
+
 //* Begin of tests
 const assert = require('assert');
 

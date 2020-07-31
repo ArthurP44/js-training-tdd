@@ -10,7 +10,7 @@
 // Your code:
 const circular = {
     circular: function(){
-        return circular;
+        return this.circular;
     }
 };
 
