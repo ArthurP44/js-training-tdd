@@ -8,9 +8,16 @@
  */
 
 // Your code:
-
+const sameSign = function(number1, number2){
+    if (Math.sign(number1) === Math.sign(number2)) {
+        return true;
+    } else {
+        return false;
+    }
+}
 //* Begin of tests
 const assert = require('assert');
+const { maxHeaderSize } = require('http');
 
 assert.strictEqual(typeof sameSign, 'function');
 assert.strictEqual(sameSign.length, 2);
