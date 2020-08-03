@@ -7,8 +7,8 @@
  */
 
 // Your code:
-const sentence = function(){
-    
+const sentence = function(arrayOfStrings){
+    return arrayOfStrings.join(' ');
 }
 
 //* Begin of tests

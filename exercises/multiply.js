@@ -9,6 +9,19 @@
  */
 
 // Your code:
+const multiply = function(numb1, numb2){
+    if(numb1 === 0 || numb2 === 0){
+        return 0;
+    }
+    let result = 0
+    let a = numb1 > 0 ? numb1 : -numb1
+    let isNeg = numb1 > 0 ? false : true
+    while(a){
+      result += numb2
+      a--
+    }
+    return isNeg ? -result : result
+}
 
 //* Begin of tests
 const assert = require('assert');

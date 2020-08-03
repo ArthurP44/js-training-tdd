@@ -11,9 +11,19 @@
  */
 
 // Your code:
+const jadencase = function(string){
+    return string.toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
 
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(typeof jadencase, 'function');
+assert.strictEqual(jadencase('Hello stranger, what are you buying ?'), 'Hello Stranger, What Are You Buying ?');
+assert.strictEqual(jadencase('got some rare things on sale stranger !'), 'Got Some Rare Things On Sale Stranger !');
+
+
 // End of tests */

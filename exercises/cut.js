@@ -29,5 +29,12 @@ const cutFirstLast = function(string){
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+assert.strictEqual(typeof cutFirst, 'function');
+assert.strictEqual(typeof cutLast, 'function');
+assert.strictEqual(typeof cutFirstLast, 'function');
+assert.strictEqual(cutFirst('arthur'), 'thur');
+assert.strictEqual(cutLast('arthur'), 'arth');
+assert.strictEqual(cutFirstLast('arthur'), 'th');
+
+
 // End of tests */

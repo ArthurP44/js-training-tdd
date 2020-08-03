@@ -10,9 +10,49 @@
  */
 
 // Your code:
+let result = 0;
+let isNeg = null;
+let oncep = true;
+
+const multiply = function(numb1, numb2){
+    if(oncep){
+        isNeg = numb1 < 0 && numb2 < 0 ? false 
+        : numb1 > 0 && numb2 < 0 ? true 
+        : numb1 < 0 && numb2 > 0 ? true
+        : false  
+        oncep = false;
+    }
+    
+    let a = numb1;
+    let b = numb2;
+
+    if(numb1 < 0){
+        a = -a;
+    }
+
+    if(numb2 < 0){
+        b = -b;
+    }
+    
+    if(numb1 === 0){
+      const finalResult = result;
+      const isNegp = isNeg;
+
+      result = 0;
+      oncep = true;
+      isNeg = null;
+
+      return isNegp ? -finalResult : finalResult
+    }
+    
+    result += b;
+    return multiply(a-1, b)
+}
+
 
 //* Begin of tests
 const assert = require('assert');
+const { once } = require('process');
 
 assert.strictEqual(typeof multiply, 'function');
 assert.strictEqual(multiply.length, 2);
