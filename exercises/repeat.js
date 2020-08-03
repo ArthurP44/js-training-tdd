@@ -8,7 +8,14 @@
  */
 
 // Your code:
+const repeat = function(string, number){
+    let result = "";
+    for(let i= number; i>0; i--){
+      result = result.concat(string);
+    }
+      return result;
 
+}
 //* Begin of tests
 const assert = require('assert');
 

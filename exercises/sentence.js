@@ -7,6 +7,9 @@
  */
 
 // Your code:
+const sentence = function(){
+    
+}
 
 //* Begin of tests
 const assert = require('assert');

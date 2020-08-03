@@ -8,11 +8,9 @@
  */
 
 // Your code:
-const circular = {
-    circular: function(){
-        return this.circular;
-    }
-};
+const circular = {};
+circular.circular = circular;
+
 
 //* Begin of tests
 const assert = require('assert');
